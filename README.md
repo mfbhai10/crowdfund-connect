@@ -6,7 +6,7 @@
 
 ## 🚀 Live Preview
 
-👉 [Live Demo Link]()
+👉 [Live Demo Link Here](https://crowdfundconnect.netlify.app/)
 
 ---
 
@@ -131,9 +131,8 @@ npm run dev
 
 ## 📸 Screenshots
 
-(Add screenshots of Home Page, Donate Page, Modals, Dark Mode here)
+(I will Add screenshots of Home Page, Donate Page, Modals, Dark Mode here Later)
 
-[Added Later]
 
 ---
 

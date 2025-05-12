@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Clean Water for All",
+    "description": "Help build clean water systems in rural villages.",
+    "status": "ongoing",
+    "goal": 1000,
+    "raised": 550
+  },
+  {
+    "id": 2,
+    "title": "Support Local Education",
+    "description": "Fund school supplies for underprivileged students.",
+    "status": "ongoing",
+    "goal": 800,
+    "raised": 600
+  },
+  {
+    "id": 3,
+    "title": "Healthcare for Street Animals",
+    "description": "Provide medicines and treatment for injured street animals.",
+    "status": "recent",
+    "goal": 500,
+    "raised": 500
+  },
+  {
+    "id": 4,
+    "title": "Rebuild Cyclone-Damaged Homes",
+    "description": "Support coastal communities to rebuild homes destroyed by recent cyclone.",
+    "status": "ended",
+    "goal": 1200,
+    "raised": 1200
+  }
+]

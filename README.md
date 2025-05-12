@@ -1,5 +1,3 @@
-// ✅ README.md
-
 # 🌐 CrowdFund Connect
 
 **CrowdFund Connect** হলো একটি ফ্রন্টএন্ড-অনলি ক্রাউডফান্ডিং প্ল্যাটফর্ম, যেখানে ব্যবহারকারীরা ভার্চুয়াল কয়েন ব্যবহার করে বিভিন্ন প্রজেক্টে দান করতে পারে।
@@ -8,7 +6,7 @@
 
 ## 🚀 Live Preview
 
-👉 [Live Demo Link (if hosted)](https://your-site-url.com)
+👉 [Live Demo Link]()
 
 ---
 
@@ -32,30 +30,37 @@ CrowdFund Connect is built with **React.js**, using local JSON for data and Cont
 ## ✨ Features
 
 ### 🔹 Navigation Bar
+
 - Home, About, News, Contact links
 - Profile icon showing username and coin balance
 - "Add Coins" button
+- "Change Name" button
 
 ### 🔹 Home Page
+
 - 📘 How It Works section
 - 📊 Funding campaigns loaded from `campaigns.json`
 - 🎯 Filter by Ongoing, Recent, Ended
 - 💬 Contact form & Footer
 
 ### 🔹 Coin System
+
 - Add coins from `/addcoin` page
 - Donate coins to campaigns from `/donate/:id`
 - Coins update live via Context API
 
 ### 🔹 Donation Logic
+
 - Can't donate more coins than balance
 - Modals for success & error
 - Coin state persisted using LocalStorage
 
 ### 🔹 Static Pages
+
 - `/about`, `/news`, `/contact` with dummy content
 
 ### 🔹 Optional Enhancements
+
 - ✅ Coin Added Modal
 - ✅ Not Enough Coins Modal
 - ✅ Dark Mode Toggle 🌙
@@ -89,6 +94,7 @@ crowdfund-connect/
 │   │   ├── Contact.jsx
 │   │   ├── About.jsx
 │   │   └── News.jsx
+│   │   └── Terms.jsx
 │   ├── App.jsx
 │   └── main.jsx
 ```
@@ -116,7 +122,7 @@ npm run dev
     "description": "Help build clean water systems in rural areas.",
     "status": "ongoing",
     "goal": 1000,
-    "raised": 450
+    "raised": 550
   }
 ]
 ```
@@ -127,15 +133,17 @@ npm run dev
 
 (Add screenshots of Home Page, Donate Page, Modals, Dark Mode here)
 
+[Added Later]
+
 ---
 
 ## 📅 Duration
 
 🕒 1 Week Project for React.js Competition  
-🎓 Built by: **Rafi**, CSE Student, United International University
+🎓 Built by: **Mutasim Fuad Rafi**, CSE Student, United International University
 
 ---
 
 ## 📜 License
 
-This project is open-source and free to use for educational/demo purposes.
+This project is open-source and free to use for Educational/Demo purposes.

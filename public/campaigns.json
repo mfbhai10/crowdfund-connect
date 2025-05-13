@@ -1,34 +1,42 @@
 [
   {
     "id": 1,
-    "title": "Clean Water for All",
-    "description": "Help build clean water systems in rural villages.",
+    "title": "Flash Flood Relief in Sylhet",
+    "description": "Support families affected by recent flash floods in Sylhet with food, medicine, and shelter.",
     "status": "ongoing",
-    "goal": 1000,
-    "raised": 550
+    "goal": 2000,
+    "raised": 950
   },
   {
     "id": 2,
-    "title": "Support Local Education",
-    "description": "Fund school supplies for underprivileged students.",
+    "title": "Winter Clothes for Northern Poor",
+    "description": "Distribute blankets and winter clothes to poor families in Rangpur and Kurigram.",
     "status": "ongoing",
-    "goal": 800,
-    "raised": 600
+    "goal": 1500,
+    "raised": 780
   },
   {
     "id": 3,
-    "title": "Healthcare for Street Animals",
-    "description": "Provide medicines and treatment for injured street animals.",
+    "title": "Education for Rohingya Children",
+    "description": "Help fund basic education and learning materials for Rohingya refugee children in Cox’s Bazar.",
     "status": "recent",
-    "goal": 500,
-    "raised": 500
+    "goal": 1200,
+    "raised": 430
   },
   {
     "id": 4,
-    "title": "Rebuild Cyclone-Damaged Homes",
-    "description": "Support coastal communities to rebuild homes destroyed by recent cyclone.",
+    "title": "Emergency Treatment for Road Accident Victims",
+    "description": "Provide financial aid for emergency medical treatment to low-income accident victims in Dhaka.",
+    "status": "ongoing",
+    "goal": 1000,
+    "raised": 890
+  },
+  {
+    "id": 5,
+    "title": "Plant Trees in Urban Dhaka",
+    "description": "Create more green spaces in Dhaka by planting trees in schools, roadsides, and parks.",
     "status": "ended",
-    "goal": 1200,
-    "raised": 1200
+    "goal": 800,
+    "raised": 800
   }
 ]

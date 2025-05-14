@@ -1,70 +1,64 @@
 # 🌐 CrowdFund Connect
 
 **CrowdFund Connect** হলো একটি ফ্রন্টএন্ড-অনলি ক্রাউডফান্ডিং প্ল্যাটফর্ম, যেখানে ব্যবহারকারীরা ভার্চুয়াল কয়েন ব্যবহার করে বিভিন্ন প্রজেক্টে দান করতে পারে।
+> 🚀 "Empowering Change with Every Coin."
 
 ---
 
-## 🚀 Live Preview
+## 🔗 Live Preview
 
-👉 [Live Demo Link Here](https://crowdfundconnect.netlify.app/)
+👉 [Visit Live on Netlify](https://crowdfundconnect.netlify.app/)
 
 ---
 
-## 🧩 Project Overview
+## 📌 Project Overview
 
-CrowdFund Connect is built with **React.js**, using local JSON for data and Context API for state management. It's a **backend-free** platform perfect for demonstrating user interaction and UI logic.
+This project is built using **React.js** with the Context API for state management and Tailwind CSS for styling. It simulates a crowdfunding experience without any backend, using `localStorage` and static `campaigns.json` data.
 
 ---
 
 ## 🛠️ Technologies Used
 
-- ✅ React.js (Vite)
-- ✅ React Router v6
-- ✅ Tailwind CSS
-- ✅ React Context API
-- ✅ LocalStorage
-- ✅ No backend / no database
+| Tech | Purpose |
+|------|---------|
+| ⚛️ React.js (Vite) | UI & component management |
+| 🎯 React Router v6 | Routing |
+| 🎨 Tailwind CSS | Styling |
+| 🧠 Context API | State management |
+| 💾 LocalStorage | Persistence |
+| 🚫 No backend | Pure frontend solution |
 
 ---
 
-## ✨ Features
+## ✨ Core Features
 
-### 🔹 Navigation Bar
+### 🧭 Navigation
+- Responsive navbar (desktop & mobile dropdown)
+- Username, coin balance, profile dropdown
 
-- Home, About, News, Contact links
-- Profile icon showing username and coin balance
-- "Add Coins" button
-- "Change Name" button
+### 🏠 Home Page
+- Hero section with animation & typewriter effect
+- Filterable funding campaigns (ongoing/recent/ended)
+- Progress bar animation for campaign goal
+- Scroll-down interactions
 
-### 🔹 Home Page
+### 🪙 Coin System
+- Add coins via `/addcoin`
+- Donate coins from `/donate/:id`
+- Coin balance and username stored in `localStorage`
 
-- 📘 How It Works section
-- 📊 Funding campaigns loaded from `campaigns.json`
-- 🎯 Filter by Ongoing, Recent, Ended
-- 💬 Contact form & Footer
+### 💸 Donation Logic
+- Can't donate more than available coins
+- Modals for errors (insufficient coins)
+- Success toast notifications
 
-### 🔹 Coin System
+### 📄 Static Pages
+- `/about`, `/news`, `/contact`, `/terms` with basic content
+- `/contact` includes form validation + toast feedback
 
-- Add coins from `/addcoin` page
-- Donate coins to campaigns from `/donate/:id`
-- Coins update live via Context API
-
-### 🔹 Donation Logic
-
-- Can't donate more coins than balance
-- Modals for success & error
-- Coin state persisted using LocalStorage
-
-### 🔹 Static Pages
-
-- `/about`, `/news`, `/contact` with dummy content
-
-### 🔹 Optional Enhancements
-
-- ✅ Coin Added Modal
-- ✅ Not Enough Coins Modal
-- ✅ Dark Mode Toggle 🌙
-- ✅ Responsive UI
+### 🌓 Theme
+- Dark mode toggle with persistence
+- Tailwind support for both themes
 
 ---
 
@@ -101,10 +95,10 @@ crowdfund-connect/
 
 ---
 
-## ⚙️ Installation
+## 📥 Installation
 
 ```bash
-git clone https://github.com/yourusername/crowdfund-connect.git
+git clone https://github.com/mfbhai10/crowdfund-connect.git
 cd crowdfund-connect
 npm install
 npm run dev
@@ -118,28 +112,33 @@ npm run dev
 [
   {
     "id": 1,
-    "title": "Clean Water for All",
-    "description": "Help build clean water systems in rural areas.",
+    "title": "Flash Flood Relief in Sylhet",
+    "description": "Support families affected by recent flash floods in Sylhet with food, medicine, and shelter.",
     "status": "ongoing",
-    "goal": 1000,
-    "raised": 550
+    "goal": 2000,
+    "raised": 950
   }
 ]
 ```
 
 ---
 
-## 📸 Screenshots
+## 📷 Screenshots
 
-(I will Add screenshots of Home Page, Donate Page, Modals, Dark Mode here Later)
+| Page | Preview |
+|------|---------|
+| Home | *(Coming Soon)* |
+| Donate | *(Coming Soon)* |
+| Add Coin | *(Coming Soon)* |
+| Modals | *(Coming Soon)* |
 
 
 ---
 
-## 📅 Duration
-
-🕒 1 Week Project for React.js Competition  
-🎓 Built by: **Mutasim Fuad Rafi**, CSE Student, United International University
+## 📅 Project Info
+	•	🕒 Duration: 1 Week (React.js Competition)
+	•	👨‍💻 Built By: Mutasim Fuad Rafi
+	•	🎓 CSE Student, United International University
 
 ---
 

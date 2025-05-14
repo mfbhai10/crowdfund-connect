@@ -65,10 +65,10 @@ const Navbar = () => {
           {navOpen ? <FaTimes /> : <FaBars />}
         </button>
 
-        {/* Desktop Profile Icon */}
+        {/* Profile Icon: */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="text-2xl hidden md:inline"
+          className="text-2xl"
           aria-label="User Profile"
         >
           <FaUserCircle />

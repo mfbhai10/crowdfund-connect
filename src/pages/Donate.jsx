@@ -1,6 +1,8 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useUser } from "../context/UserContext";
+import toast from "react-hot-toast";
+import NotEnoughCoinsModal from "../components/NotEnoughCoinsModal";
 
 const Donate = () => {
   const { eventId } = useParams();
@@ -8,7 +10,7 @@ const Donate = () => {
   const { coins, deductCoins } = useUser();
   const [event, setEvent] = useState(null);
   const [amount, setAmount] = useState("");
-  const [error, setError] = useState("");
+  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     fetch("/campaigns.json")
@@ -22,18 +24,18 @@ const Donate = () => {
   const handleDonate = () => {
     const num = parseInt(amount);
     if (isNaN(num) || num <= 0) {
-      setError("Please enter a valid coin amount.");
+      toast.error("Please enter a valid coin amount.");
       return;
     }
 
     if (num > coins) {
-      setError("Not enough coins to donate!");
+      setShowModal(true);
       return;
     }
 
     // Success
     deductCoins(num);
-    alert(`Successfully donated ${num} coins to "${event.title}"`);
+    toast.success(`Successfully donated ${num} coins to "${event.title}"`);
     navigate("/");
   };
 
@@ -50,15 +52,10 @@ const Donate = () => {
       <input
         type="number"
         value={amount}
-        onChange={(e) => {
-          setAmount(e.target.value);
-          setError("");
-        }}
+        onChange={(e) => setAmount(e.target.value)}
         placeholder="Enter coins to donate"
         className="w-full border border-gray-300 p-2 rounded mb-3 text-black"
       />
-
-      {error && <p className="text-red-600 mb-2">{error}</p>}
 
       <button
         onClick={handleDonate}
@@ -66,6 +63,8 @@ const Donate = () => {
       >
         Donate Now
       </button>
+
+      <NotEnoughCoinsModal show={showModal} onClose={() => setShowModal(false)} />
     </div>
   );
 };

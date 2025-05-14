@@ -2,7 +2,8 @@ import ContactForm from "../components/ContactForm";
 
 const Contact = () => {
   return (
-    <div className="py-10 px-4 max-w-2xl mx-auto">
+    <div className="pt-[70px] px-4">
+      <h1 className="text-3xl font-bold text-center mt-4">Contact Us</h1>
       <ContactForm />
     </div>
   );

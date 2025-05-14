@@ -1,63 +1,83 @@
+// ✅ src/components/ContactForm.jsx
 import { useState } from "react";
 
 const ContactForm = () => {
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
   const [submitted, setSubmitted] = useState(false);
 
   const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (form.name && form.email && form.message) {
+    if (formData.name && formData.email && formData.message) {
       setSubmitted(true);
-      setForm({ name: "", email: "", message: "" });
+      setTimeout(() => setSubmitted(false), 3000);
+      setFormData({ name: "", email: "", message: "" });
+    } else {
+      alert("Please fill in all fields.");
     }
   };
 
   return (
-    <div className="max-w-xl mx-auto py-10 px-4">
-      <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
-      {submitted ? (
-        <p className="text-green-600">Message sent successfully!</p>
-      ) : (
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            value={form.name}
-            onChange={handleChange}
-            className="w-full border p-2 rounded text-black"
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            value={form.email}
-            onChange={handleChange}
-            className="w-full border p-2 rounded text-black"
-            required
-          />
-          <textarea
-            name="message"
-            placeholder="Your Message"
-            value={form.message}
-            onChange={handleChange}
-            className="w-full border p-2 rounded text-black"
-            required
-          ></textarea>
-          <button
-            type="submit"
-            className="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700"
-          >
-            Submit
-          </button>
-        </form>
+    <form
+      onSubmit={handleSubmit}
+      className="max-w-xl mx-auto mt-8 bg-white dark:bg-gray-900 shadow-md rounded px-8 pt-6 pb-8"
+    >
+      <h2 className="text-2xl font-semibold mb-4 text-center">Send us a message</h2>
+
+      {submitted && (
+        <p className="text-green-600 text-center mb-4">Message submitted successfully!</p>
       )}
-    </div>
+
+      <div className="mb-4">
+        <label className="block text-sm font-bold mb-1">Name</label>
+        <input
+          type="text"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+          className="w-full px-3 py-2 border rounded dark:bg-gray-800 dark:text-white"
+          required
+        />
+      </div>
+
+      <div className="mb-4">
+        <label className="block text-sm font-bold mb-1">Email</label>
+        <input
+          type="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+          className="w-full px-3 py-2 border rounded dark:bg-gray-800 dark:text-white"
+          required
+        />
+      </div>
+
+      <div className="mb-4">
+        <label className="block text-sm font-bold mb-1">Message</label>
+        <textarea
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
+          rows="5"
+          className="w-full px-3 py-2 border rounded dark:bg-gray-800 dark:text-white"
+          required
+        ></textarea>
+      </div>
+
+      <button
+        type="submit"
+        className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded w-full"
+      >
+        Submit
+      </button>
+    </form>
   );
 };
 

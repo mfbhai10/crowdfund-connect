@@ -33,7 +33,6 @@ const Donate = () => {
       return;
     }
 
-    // Success
     deductCoins(num);
     toast.success(`Successfully donated ${num} coins to "${event.title}"`);
     navigate("/");

@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-// Components
+// Components:
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-// Pages
+// Pages:
 import Home from "./pages/Home";
 import About from "./pages/About";
 import News from "./pages/News";

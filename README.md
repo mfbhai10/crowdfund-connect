@@ -127,7 +127,7 @@ npm run dev
 
 | Page | Preview |
 |------|---------|
-| Home | *(Coming Soon)* |
+| Home | CrowdFund/public/images/Screenshot 2025-05-18 at 10.01.50 PM.png |
 | Donate | *(Coming Soon)* |
 | Add Coin | *(Coming Soon)* |
 | Modals | *(Coming Soon)* |

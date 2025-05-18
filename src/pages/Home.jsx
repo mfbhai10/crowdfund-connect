@@ -12,7 +12,7 @@ const Home = () => {
   };
 
   useEffect(() => {
-    // Optional: Scroll to top when landing on home
+    //Scroll to top when landing on home
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 

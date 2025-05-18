@@ -127,10 +127,10 @@ npm run dev
 
 | Page | Preview |
 |------|---------|
-| Home |![Home_page](/images/Home_page.png) |
-| Donate | *(Coming Soon)* |
-| Add Coin | *(Coming Soon)* |
-| Modals | *(Coming Soon)* |
+| Home |![Home_page](public/images/Home_page.png) |
+| Funding Campaigns | ![Funding Campaigns_page](public/images/Funding_Campaigns.png) |
+| Add Coin | ![Add Coin_page](public/images/Add_Coin.png) |
+| Donate | ![Donate_page](public/images/Donate.png) |
 
 
 ---
